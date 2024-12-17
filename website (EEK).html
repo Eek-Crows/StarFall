@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect With Me</title>
+  <style>
+    /* Reset and Body Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth; /* Smooth scrolling effect */
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at center, #040303, #461111, #A13333);
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Section Styling */
+    section {
+      min-height: 80vh;
+      width: 100%;
+      padding: 30px 20px;
+    }
+
+    /* Container Styling */
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px 20px;
+      width: 90%;
+      max-width: 450px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      z-index: 10;
+      margin: 20px auto;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #ffcccc;
+      letter-spacing: 2px;
+      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: #ffdddd;
+    }
+
+    /* Button Styling */
+    a {
+      display: inline-block;
+      margin: 10px 10px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      letter-spacing: 1px;
+    }
+
+    a.instagram {
+      background: linear-gradient(45deg, #ff4d4d, #ff1a1a);
+      box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
+    }
+
+    a.instagram:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(255, 77, 77, 0.5);
+    }
+
+    a.github {
+      background: linear-gradient(45deg, #b30000, #ff3333);
+      box-shadow: 0 4px 15px rgba(179, 0, 0, 0.3);
+    }
+
+    a.github:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(179, 0, 0, 0.5);
+    }
+
+    /* YouTube Button Styling */
+    a.youtube {
+      background: linear-gradient(45deg, #b30000, #ff3333);
+      box-shadow: 0 4px 15px rgba(255, 204, 0, 0.3);
+    }
+
+    a.youtube:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(255, 204, 0, 0.5);
+    }
+
+    /* Shooting Stars */
+    .shooting-star {
+      position: absolute;
+      width: 2px;
+      height: 80px;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+      border-radius: 50%;
+      animation: shoot 3s linear infinite;
+    }
+
+    /* Randomly placed stars */
+    .shooting-star:nth-child(1) {
+      top: -10%;
+      left: 10%;
+      animation-delay: 0s;
+    }
+    .shooting-star:nth-child(2) {
+      top: -10%;
+      left: 30%;
+      animation-delay: 1s;
+    }
+    .shooting-star:nth-child(3) {
+      top: -10%;
+      left: 50%;
+      animation-delay: 0.5s;
+    }
+    .shooting-star:nth-child(4) {
+      top: -10%;
+      left: 70%;
+      animation-delay: 1.5s;
+    }
+    .shooting-star:nth-child(5) {
+      top: -10%;
+      left: 90%;
+      animation-delay: 2s;
+    }
+
+    @keyframes shoot {
+      0% {
+        transform: translateY(-200px);
+        opacity: 1;
+      }
+      70% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(120vh);
+        opacity: 0;
+      }
+    }
+
+    /* About Me Section */
+    .about-me {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px 20px;
+      border-radius: 20px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 450px;
+      /* Remove animation if it causes issue */
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 1s ease-in-out;
+    }
+
+    .about-me h2 {
+      color: #ffcccc;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .about-me p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ffdddd;
+    }
+
+    /* About Me Picture Grid */
+    .picture-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 10px;
+    }
+
+    .picture-grid img {
+      width: 45%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .picture-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Section -->
+  <section id="main">
+    <div class="container">
+      <h1>✨ Connect With Me ✨</h1>
+      <p>Follow me on Instagram for updates and check out my GitHub for cool projects!</p>
+      <a href="https://www.instagram.com/eek_crows/" target="_blank" class="instagram">Instagram</a>
+      <a href="https://github.com/Eek-Crows" target="_blank" class="github">GitHub</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm a passionate developer and creative thinker who loves to build
+        interactive and visually stunning projects. When I'm not coding, you'll find
+        me exploring music, especially K-pop, or brainstorming new ideas.
+      </p>
+      <div class="picture-grid">
+        <img src="https://via.placeholder.com/150" alt="Placeholder 1">
+        <img src="https://via.placeholder.com/150" alt="Placeholder 2">
+        <img src="https://via.placeholder.com/150" alt="Placeholder 3">
+        <img src="https://via.placeholder.com/150" alt="Placeholder 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- YouTube Section -->
+  <section id="News">
+    <div class="container">
+      <h2>News story</h2>
+      <p>Spectrum News coverage for ARISE  drone competition that I was lead for interview </p>
+      <a href="https://www.youtube.com/watch?v=MvSoBiR3Swg" target="_blank" class="youtube">Watch on YouTube</a>
+    </div>
+  </section>
+
+  <!-- Shooting Stars -->
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+</body>
+</html>
