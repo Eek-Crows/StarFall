@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cybersecurity student at RIT with a passion for tech, design, and creative problem solving.">
+  <meta property="og:title" content="Connect with Me - Personal Website">
+  <meta property="og:description" content="Learn more about me, my projects, and how to get in touch.">
+  <title>Connect With Me</title>
+  <!-- External Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <style>
+    /* Reset and General Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: linear-gradient(-45deg, #040303, #461111, #A13333, #6E6B6B);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
+      text-align: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Parallax Section */
+    #parallax {
+      position: relative;
+      height: 100vh;
+      background: url('your-parallax-image.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2.5rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Section Styling */
+    section {
+      padding: 30px 20px;
+      margin: 20px auto;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px 20px;
+      width: 90%;
+      max-width: 450px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+    }
+    h1, h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #ffcccc;
+      letter-spacing: 2px;
+      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: #ffdddd;
+    }
+    a {
+      display: inline-block;
+      margin: 10px 10px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: all 0.4s ease;
+    }
+    a.instagram {
+      background: linear-gradient(45deg, #ff4d4d, #ff1a1a);
+    }
+    a.github {
+      background: linear-gradient(45deg, #b30000, #ff3333);
+    }
+    a.youtube {
+      background: linear-gradient(45deg, #ff4d4d, #d91616);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 10px 0;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    /* Particles.js Container */
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Particles.js Background -->
+  <div id="particles-js"></div>
+
+  <!-- Parallax Hero Section -->
+  <div id="parallax">
+    <h1>✨ Welcome to My World ✨</h1>
+  </div>
+
+  <!-- Main Section -->
+  <section id="main" data-aos="fade-up">
+    <div class="container">
+      <h1>Connect With Me</h1>
+      <p>Follow me on Instagram, explore my GitHub projects, check out my YouTube channel, or reach out!</p>
+      <a href="https://www.instagram.com/eek_crows/" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://github.com/Eek-Crows" target="_blank" class="github"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://youtu.be/MvSoBiR3Swg?si=l0_eLu7loy4L05xj" target="_blank" class="youtube"><i class="fab fa-youtube"></i> YouTube</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <style>
+    /* Fixed 4x4 Grid for Images */
+    .picture-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .picture-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .picture-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+  <section id="about" data-aos="fade-up">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Hi! I’m a cybersecurity student at RIT with a passion for solving problems creatively. I’m also inspired by music, design, and storytelling, which influence my projects and personal interests. Let’s connect!
+      </p>
+      <div class="picture-grid">
+        <img src="IMG_6594.jpeg" alt="Image 1">
+        <img src="IMG_2825.jpeg" alt="Image 2">
+        <img src="74F675CB-D1B9-45EC-A3D5-53EE8202F3C8.jpeg" alt="Image 3">
+        <img src="6ABF24BB-F35F-451D-9320-AF3AA8F26046.jpeg" alt="Image 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- Cybersecurity Tips -->
+  <section id="tips" data-aos="fade-up">
+    <div class="container">
+      <h2>Cybersecurity Tips</h2>
+      <p class="tips">Always use two-factor authentication and strong passwords.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      Made with ❤️ by a passionate cybersecurity student.
+      <br>
+      <a href="#main">Back to Top</a>
+    </p>
+  </footer>
+
+  <!-- External Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    // Initialize AOS (Animate on Scroll)
+    AOS.init();
+
+    // Initialize Particles.js
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 50, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: {
+          type: "circle",
+          stroke: { width: 0, color: "#000000" },
+          polygon: { nb_sides: 5 },
+        },
+        opacity: { value: 0.5 },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          out_mode: "out",
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+        },
+        modes: {
+          repulse: { distance: 200 },
+          push: { particles_nb: 4 },
+        },
+      },
+      retina_detect: true,
+    });
+  </script>
+</body>
+</html>
