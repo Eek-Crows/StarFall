@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   
+  <!-- Google Font for Elegant Serif -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
   <!-- Custom Styles -->
   <style>
     /* Reset and General Styling */
@@ -27,12 +30,12 @@
     }
     html {
       scroll-behavior: smooth;
-      height: 100%; /* Ensure full height */
+      height: 100%;
     }
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Times New Roman', serif; /* Default font for body */
       color: #fff;
-      background-color: #ff0000; /* Red background */
+      background-color: #491010; 
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -82,6 +85,7 @@
       backdrop-filter: blur(10px);
     }
     h1, h2 {
+      font-family: 'Playfair Display', serif; /* Apply Playfair Display font to headings */
       font-size: 2rem;
       margin-bottom: 15px;
       color: #ffcccc;
@@ -89,6 +93,7 @@
       text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
     p {
+      font-family: 'Times New Roman', serif; /* Apply Times New Roman font to body text */
       font-size: 1.1rem;
       margin-bottom: 20px;
       line-height: 1.6;
@@ -106,13 +111,13 @@
       transition: all 0.4s ease;
     }
     a.instagram {
-      background: linear-gradient(45deg, #ff4d4d, #ff1a1a);
+      background: linear-gradient(45deg, #6f1d1d, #961010);
     }
     a.github {
-      background: linear-gradient(45deg, #b30000, #ff3333);
+      background: linear-gradient(45deg, #6f1d1d, #961010);
     }
     a.youtube {
-      background: linear-gradient(45deg, #ff4d4d, #d91616);
+      background: linear-gradient(45deg, #6f1d1d, #961010);
     }
 
     /* Footer */
@@ -127,19 +132,35 @@
       font-size: 0.9rem;
     }
 
-    /* Picture Grid */
-    .picture-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      margin-top: 20px;
+    /* Connect With Me Header Font */
+    #connect-header {
+      font-family: 'Playfair Display', serif; /* Custom Font */
+      font-size: 3rem; /* Larger for emphasis */
+      margin-bottom: 15px;
+      color: #ffcccc;
+      letter-spacing: 2px;
+      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
 
-    .picture-grid img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* About Section Styling */
+    #about, #skills, #tech-skills, #soft-skills, #tips {
+      font-family: 'Times New Roman', serif; /* Default font for body sections */
+    }
+
+    /* Custom star bullet points */
+    ul {
+      list-style-type: none; /* Remove default bullets */
+      padding-left: 0;
+    }
+    ul li {
+      position: relative;
+      padding-left: 25px;
+    }
+    ul li::before {
+      content: '☾'; /* Star character */
+      position: absolute;
+      left: 0;
+      color: #ffffff; /* Yellow star */
     }
 
     /* Responsive Design */
