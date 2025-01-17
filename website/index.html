@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cybersecurity student at RIT with a passion for tech, design, and creative problem solving.">
+  <meta name="description" content="Cybersecurity student at RIT with a passion for tech, design, and creative problem-solving.">
+  <meta name="keywords" content="Cybersecurity, Web Design, Tech, Projects, GitHub, Instagram, YouTube">
+  <meta name="author" content="Your Name">
   <meta property="og:title" content="Connect with Me - Personal Website">
   <meta property="og:description" content="Learn more about me, my projects, and how to get in touch.">
+  <meta property="og:image" content="path-to-image.jpg">
+  <meta property="og:url" content="https://www.yourwebsite.com">
+  
   <title>Connect With Me</title>
+
   <!-- External Libraries -->
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   
@@ -22,15 +27,20 @@
     }
     html {
       scroll-behavior: smooth;
+      height: 100%; /* Ensure full height */
     }
     body {
       font-family: 'Poppins', sans-serif;
       color: #fff;
       background-color: #ff0000; /* Red background */
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       min-height: 100vh;
-      overflow-x: hidden;
       position: relative;
+      overflow-x: hidden;
     }
 
     /* Particles.js Container */
@@ -53,19 +63,21 @@
       color: #fff;
       font-size: 2.5rem;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      width: 100%;
     }
 
     /* Section Styling */
     section {
       padding: 30px 20px;
       margin: 20px auto;
+      width: 100%;
+      max-width: 900px;
     }
     .container {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 20px;
       padding: 30px 20px;
-      width: 90%;
-      max-width: 900px;
+      width: 100%;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(10px);
     }
@@ -108,6 +120,8 @@
       margin-top: 40px;
       background: rgba(0, 0, 0, 0.2);
       padding: 10px 0;
+      width: 100%;
+      text-align: center;
     }
     footer p {
       font-size: 0.9rem;
@@ -127,6 +141,28 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .picture-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .picture-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      h1, h2 {
+        font-size: 1.5rem;
+      }
+
+      a {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -134,45 +170,80 @@
   <div id="particles-js"></div>
 
   <!-- Parallax Hero Section -->
-  <div id="parallax">
+  <header id="parallax" role="banner">
     <h1>✨ Welcome to My World ✨</h1>
-  </div>
+  </header>
 
-  <!-- Main Section -->
-  <section id="main" data-aos="fade-up">
-    <div class="container">
-      <h1>Connect With Me</h1>
-      <p>Follow me on Instagram, explore my GitHub projects, check out my YouTube channel, or reach out!</p>
-      <a href="https://www.instagram.com/eek_crows/" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://github.com/Eek-Crows" target="_blank" class="github"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://youtu.be/MvSoBiR3Swg?si=l0_eLu7loy4L05xj" target="_blank" class="youtube"><i class="fab fa-youtube"></i> YouTube</a>
-    </div>
-  </section>
-
-  <!-- About Me -->
-  <section id="about" data-aos="fade-up">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        Hi! I’m a cybersecurity student at RIT with a passion for solving problems creatively.
-        I’m also inspired by music, design, and storytelling, which influence my projects and personal interests. Let’s connect!
-      </p>
-      <div class="picture-grid">
-        <img src="images/IMG_6594.jpeg" alt="Image 1">
-        <img src="images/IMG_2825.jpeg" alt="Image 2">
-        <img src="images/74F675CB-D1B9-45EC-A3D5-53EE8202F3C8.jpeg" alt="Image 3">
-        <img src="images/6ABF24BB-F35F-451D-9320-AF3AA8F26046.jpeg" alt="Image 4">
+  <main>
+    <!-- Connect With Me Section -->
+    <section id="main" aria-labelledby="connect-header">
+      <div class="container">
+        <h2 id="connect-header">Connect With Me</h2>
+        <p>Follow me on Instagram, explore my GitHub projects, check out the news story I was featured in, or reach out!</p>
+        <a href="https://www.instagram.com/eek_crows/" target="_blank" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://github.com/Eek-Crows" target="_blank" class="github" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://youtu.be/MvSoBiR3Swg?si=l0_eLu7loy4L05xj" target="_blank" class="youtube" aria-label="YouTube"><i class="fab fa-youtube"></i> YouTube</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Cybersecurity Tips -->
-  <section id="tips" data-aos="fade-up">
-    <div class="container">
-      <h2>Cybersecurity Tips</h2>
-      <p class="tips">Always use two-factor authentication and strong passwords.</p>
-    </div>
-  </section>
+    <!-- About Me Section -->
+    <section id="about" aria-labelledby="about-header">
+      <div class="container">
+        <h2 id="about-header">About Me</h2>
+        <p>
+          Hi! I’m a cybersecurity student at RIT with a passion for solving problems creatively. I’m also inspired by music, design, and storytelling, which influence my projects and personal interests. Let’s connect!
+        </p>
+      </div>
+    </section>
+
+    <!-- My Skills Section -->
+    <section id="skills" aria-labelledby="skills-header">
+      <div class="container">
+        <h2 id="skills-header">My Skills</h2>
+        <ul>
+          <li>Web Development: HTML, CSS, JavaScript</li>
+          <li>Programming: Python, C++, Java</li>
+          <li>Version Control: Git, GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Tech Skills Section -->
+    <section id="tech-skills" aria-labelledby="tech-skills-header">
+      <div class="container">
+        <h2 id="tech-skills-header">Technical Skills</h2>
+        <ul>
+          <li>Network Security and Threat Analysis</li>
+          <li>Penetration Testing (Kali Linux)</li>
+          <li>Web Development (HTML, CSS, JavaScript)</li>
+          <li>Database Management (MySQL)</li>
+          <li>System Administration (Windows Server)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Soft Skills Section -->
+    <section id="soft-skills" aria-labelledby="soft-skills-header">
+      <div class="container">
+        <h2 id="soft-skills-header">Soft Skills</h2>
+        <ul>
+          <li>Problem Solving and Analytical Thinking</li>
+          <li>Team Collaboration and Leadership</li>
+          <li>Excellent Communication and Interpersonal Skills</li>
+          <li>Adaptability and Continuous Learning</li>
+          <li>Time Management and Multitasking</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cybersecurity Tips Section -->
+    <section id="tips" aria-labelledby="tips-header">
+      <div class="container">
+        <h2 id="tips-header">Cybersecurity Tips</h2>
+        <p>Always use two-factor authentication and strong passwords.</p>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
